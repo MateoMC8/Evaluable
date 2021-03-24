@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Calculadora de Operaciones </title>
+	<script type="text/javascript">
+		function suma()
+		{
+	var num1= Number(document.getElementById('num1').value);
+	var num2= Number(document.getElementById('num2').value);
+		var resultado = num1 + num2; 
+
+		document.getElementById('resultado').value =resultado;
+		}
+		function resta()
+		{
+	var num1= Number(document.getElementById('num1').value);
+	var num2= Number(document.getElementById('num2').value);
+		var resultado = num1 - num2; 
+
+		document.getElementById('resultado').value =resultado;
+		}
+		function multiplicacion()
+		{
+	var num1= Number(document.getElementById('num1').value);
+	var num2= Number(document.getElementById('num2').value);
+		var resultado = num1 * num2; 
+
+		document.getElementById('resultado').value =resultado;
+		}
+		function Division()
+		{
+	var num1= Number(document.getElementById('num1').value);
+	var num2= Number(document.getElementById('num2').value);
+		var resultado = num1 / num2; 
+
+		document.getElementById('resultado').value =resultado;
+		}
+		function potenciacion()
+		{
+	var num1= Number(document.getElementById('num1').value);
+	var num2= Number(document.getElementById('num2').value);
+		var resultado = Math.pow(num1,num2); 
+
+		document.getElementById('resultado').value =resultado;
+		}
+</script>
+</head>
+<body>
+	
+ <label>Ingrese el primer valor <input type="text" id="num1"></label>
+<br>
+<br>
+<label>Ingrese el segundo valor <input type="text" id="num2"></label>
+<br>
+<br>
+<label>El resultado es: <input type="text" id="resultado"></label><br>
+<br>
+<input type="button" name="suma" value="Suma" onclick="suma()">
+<input type="button" name="resta" value="Resta" onclick="resta()">
+<input type="button" name="multiplicacion" value="Multiplicacion" onclick="multiplicacion()">
+<input type="button" name="division" value="Division" onclick="Division()">
+<input type="button" name="potenciacion" value="Potenciacion" onclick="potenciacion()">
+</body>
+</html>
